@@ -1,9 +1,9 @@
 class Uformat < Formula
     desc "uformat"
     homepage "https://github.com/amyy54/uformat"
-    url "https://github.com/amyy54/uformat/releases/download/v0.3.0/darwin-universal.tar.gz"
-    sha256 "8e1884961853c93ed567afad958e36e53653db5337f897886a172482b00cea5d"
-    version "0.3.0"
+    url "https://github.com/amyy54/uformat/releases/download/v0.4.0/darwin-universal.tar.gz"
+    sha256 "739956a3a74bfd768b3e001592d5195c3c019e06265f4e483d18e14076d800d7"
+    version "0.4.0"
 
     def install
         bin.install "./uformat"
@@ -12,6 +12,6 @@ class Uformat < Formula
     end
 
     test do
-        assert_match /\buformat: v0\.3\.0\b/, shell_output("#{bin}/uformat -version")
+        assert_match /\buformat: v0\.4\.0\b/, shell_output("#{bin}/uformat -version")
     end
 end
